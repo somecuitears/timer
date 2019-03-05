@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 
 class Timer extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             year: 2019,
-            month: 1,
-            days: 5,
-            hour: 20,
-            minute: 59,
-            second: 59,
+            month: props.month,
+            days: props.days,
+            hour: 8,
+            minute: 10,
+            second: 10,
         }
     }
 
